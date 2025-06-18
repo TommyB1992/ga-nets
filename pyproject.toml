@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ga-nets"
+version = "1.0.0"
+description = "Modular and dynamic neural network framework designed for integration with genetic algorithms."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+    { name="Tomas Bartoli", email="tomasbartoli1992@gmail.com" }
+]
+license = { text = "MIT" }
+keywords = ["neural-networks", "genetic-algorithms", "feedforward", "recurrent", "evolutionary"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/tommyb1992/ga-nets"
+"Bug Tracker" = "https://github.com/tommyb1992/ga-nets/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ga_nets"]
